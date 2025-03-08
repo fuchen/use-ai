@@ -1,0 +1,7 @@
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.exp
+*.def
