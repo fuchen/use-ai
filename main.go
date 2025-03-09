@@ -13,8 +13,6 @@ const (
 )
 
 func main() {
-	fmt.Printf("%s v%s - Use AI to help you generate shell commands\n\n", appName, appVersion)
-
 	// 加载配置
 	config, err := LoadConfig()
 	if err != nil {
@@ -24,7 +22,6 @@ func main() {
 
 	// 检测系统环境
 	sysInfo := DetectSystem()
-	fmt.Printf("Detected system environment: %s\n\n", sysInfo.GetSystemDescription())
 
 	// 创建LLM客户端
 	llmClient := NewLLMClient(config)
@@ -34,7 +31,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 
 	// 开始交互循环
-	fmt.Println("Enter your question (press Enter to exit):")
+	fmt.Printf("Enter your question about <%s> (press Enter to exit):\n", sysInfo.ShellType)
 	for {
 		fmt.Print("> ")
 		question, err := reader.ReadString('\n')

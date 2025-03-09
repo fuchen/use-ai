@@ -25,7 +25,7 @@ const defaultConfig = `{
     "endpoint": "https://api.openai.com/v1",
     "model": "gpt-4-turbo",
     "api_key": "YOUR_API_KEY_HERE",
-    "system_prompt": "You are a professional command line assistant. Based on the user's query, only return the appropriate shell command without explanation. Make sure the command is suitable for the user's operating system and shell environment."
+    "system_prompt": "You are a professional command line assistant. Based on the user's query, only return the appropriate shell command as plain text, without any other text, without markdown tags. Make sure the command is suitable for the user's operating system and shell environment.\nExample: \nUser: create a new directory called 'test'\nAI: mkdir test"
   }
 }`
 
