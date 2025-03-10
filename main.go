@@ -45,7 +45,6 @@ func main() {
 
 		// 检查是否要退出
 		if question == "" {
-			fmt.Println("Goodbye!")
 			break
 		}
 

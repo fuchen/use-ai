@@ -23,7 +23,7 @@ go build
 
 ## Configuration
 
-When first run, the program will create a `.ask-ai.json` configuration file in your home directory. You need to edit this file to add your OpenAI API key:
+When first run, the program will create a `.use-ai.json` configuration file in your home directory. You need to edit this file to add your OpenAI API key:
 
 ```json
 {

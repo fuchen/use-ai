@@ -38,7 +38,7 @@ func LoadConfig() (*Config, error) {
 	}
 
 	// 配置文件路径
-	configPath := filepath.Join(home, ".ask-ai.json")
+	configPath := filepath.Join(home, ".use-ai.json")
 
 	// 检查配置文件是否存在
 	_, err = os.Stat(configPath)
