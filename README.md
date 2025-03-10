@@ -16,7 +16,7 @@
 Ensure you have Go installed (Go 1.16+ recommended), then run:
 
 ```bash
-git clone https://github.com/username/use-ai
+git clone https://github.com/fuchen/use-ai
 cd use-ai
 go build
 ```
